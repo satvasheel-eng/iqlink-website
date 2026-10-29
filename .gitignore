@@ -1,9 +1,10 @@
 node_modules
 dist
 dist-ssr
+.output
+.tanstack
 *.local
 .DS_Store
 .env
 .env.*
 !.env.example
-node_modules/.tmp

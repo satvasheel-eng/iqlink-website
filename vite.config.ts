@@ -1,17 +1,19 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
-import tailwindcss from '@tailwindcss/vite'
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import viteReact from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 
-const dirname = path.dirname(fileURLToPath(import.meta.url))
-
-// https://vite.dev/config/
+// Every page is prerendered to static HTML in dist/client, which GitHub Pages
+// serves at iqlink.in (see .github/workflows/deploy.yml).
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      '@': path.resolve(dirname, './src'),
-    },
-  },
-})
+  plugins: [
+    tsConfigPaths(),
+    tailwindcss(),
+    tanstackStart({
+      prerender: { enabled: true, crawlLinks: true },
+      pages: [{ path: "/404", prerender: { enabled: true, outputPath: "/404.html" } }],
+    }),
+    viteReact(),
+  ],
+});

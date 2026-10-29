@@ -1,33 +1,11 @@
-# IQLink Technologies — Corporate Website
+# iqlink.in
 
-Marketing site for **IQLink Technologies Private Limited**, an AI-powered technology
-and intelligence company building digital platforms, decision-support systems, and
-software products across startup intelligence, business compliance, personal finance,
-education technology, government decision-support, and enterprise software.
+The IQLink Technologies company website: TanStack Start + Tailwind, with every page prerendered to static HTML.
 
-Positioning: **Connecting Intelligence to Action.**
+- `npm run dev`: local development server
+- `npm run build`: builds and prerenders every page into `dist/client`
+- `npm run typecheck`: TypeScript check
 
-## Stack
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `dist/client` to GitHub Pages at https://iqlink.in.
 
-- [Vite](https://vite.dev/) + React + TypeScript
-- Tailwind CSS v4
-- [shadcn/ui](https://ui.shadcn.com/) components
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## Structure
-
-- `src/components/sections/` — page sections (Nav, Hero, About, FocusAreas, Portfolio, Philosophy, Contact, Footer)
-- `src/components/Logo.tsx` — IQLink mark and wordmark (SVG)
-- `src/components/ui/` — shadcn/ui primitives
+Content (products, contact email, company details) lives in `src/content/site.ts`. The logo is `src/components/site/Wordmark.tsx` (`IQLinkMark`), with copies in `public/logo.svg`, `public/favicon.svg`, `public/apple-touch-icon.png` and `public/og-image.png`.
