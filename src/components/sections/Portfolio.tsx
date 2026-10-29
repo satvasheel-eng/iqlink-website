@@ -6,7 +6,7 @@ const products = [
     status: 'Live',
     tagline: 'Turn your startup idea into an evidence-backed plan.',
     body: 'Idea validation and structured, data-driven planning for early-stage founders — bridging the gap between a concept and a fundable strategy.',
-    href: 'https://foundyn.firmyn.in/',
+    href: 'https://foundyn.in/',
     accent: '#7C87FF',
   },
   {

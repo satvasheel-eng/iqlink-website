@@ -13,7 +13,7 @@ const columns = [
   {
     title: 'Products',
     links: [
-      { label: 'Foundyn', href: 'https://foundyn.firmyn.in/' },
+      { label: 'Foundyn', href: 'https://foundyn.in/' },
       { label: 'Firmyn', href: 'https://firmyn.in/' },
       { label: 'Capyn', href: '#portfolio' },
     ],
