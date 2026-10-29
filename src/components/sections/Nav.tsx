@@ -9,6 +9,11 @@ const links = [
   { href: '#contact', label: 'Contact' },
 ]
 
+const products = [
+  { href: 'https://foundyn.in/', label: 'Foundyn' },
+  { href: 'https://firmyn.in/', label: 'Firmyn' },
+]
+
 export function Nav() {
   const [open, setOpen] = useState(false)
 
@@ -27,6 +32,21 @@ export function Nav() {
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
+            </a>
+          ))}
+          <span className="h-4 w-px bg-border" aria-hidden="true" />
+          {products.map((p) => (
+            <a
+              key={p.href}
+              href={p.href}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-medium text-foreground/90 transition-colors hover:text-foreground"
+            >
+              {p.label}
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
           ))}
         </nav>
@@ -61,6 +81,18 @@ export function Nav() {
                 onClick={() => setOpen(false)}
               >
                 {l.label}
+              </a>
+            ))}
+            {products.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-foreground"
+                onClick={() => setOpen(false)}
+              >
+                {p.label} ↗
               </a>
             ))}
             <Button asChild size="sm" className="w-full rounded-full">
