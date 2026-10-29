@@ -59,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} IQLink Technologies Private Limited. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} IQLink Technologies Private Limited · CIN U62099PN2026PTC260024</span>
           <span>Intelligence for what comes next.</span>
         </div>
       </div>

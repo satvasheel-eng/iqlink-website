@@ -13,7 +13,7 @@ export function Contact() {
         </p>
         <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button asChild size="lg" className="rounded-full px-8">
-            <a href="mailto:hello@iqlink.tech">Email us</a>
+            <a href="mailto:managefirmyn@gmail.com">Email us</a>
           </Button>
           <Button asChild size="lg" variant="outline" className="rounded-full px-8">
             <a href="https://firmyn.in/" target="_blank" rel="noreferrer">Explore Firmyn</a>
