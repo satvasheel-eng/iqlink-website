@@ -1,0 +1,9 @@
+# Netlify builds every push to main and serves dist/client at www.iqlink.in.
+# Pages are prerendered as about.html etc.; Netlify serves them at /about, and
+# 404.html for anything else.
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22"
