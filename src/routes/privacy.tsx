@@ -17,11 +17,11 @@ export const Route = createFileRoute("/privacy")({
         property: "og:description",
         content: "How IQLink Technologies handles information collected through this website.",
       },
-      { property: "og:url", content: "https://iqlink.in/privacy" },
+      { property: "og:url", content: "https://www.iqlink.in/privacy" },
       { property: "og:type", content: "website" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/privacy" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/privacy" }],
   }),
   component: Privacy,
 });

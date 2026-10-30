@@ -20,7 +20,7 @@ export const Route = createFileRoute("/platforms")({
         content:
           "Three platforms built on one intelligence spine: from idea to fundable plan, compliance readiness and data room, and personal-finance decision support.",
       },
-      { property: "og:url", content: "https://iqlink.in/platforms" },
+      { property: "og:url", content: "https://www.iqlink.in/platforms" },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "Platforms — Foundyn, Firmyn and Capyn | IQLink" },
       {
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/platforms")({
           "Three platforms built on one intelligence spine: from idea to fundable plan, compliance readiness and data room, and personal-finance decision support.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/platforms" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/platforms" }],
   }),
   component: Platforms,
 });

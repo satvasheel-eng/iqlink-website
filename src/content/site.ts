@@ -1,4 +1,4 @@
-export const SITE_URL = "https://iqlink.in";
+export const SITE_URL = "https://www.iqlink.in";
 /** For now the company inbox is managefirmyn@gmail.com; iqlink.in mail is being set up. */
 export const CONTACT_EMAIL = "managefirmyn@gmail.com";
 

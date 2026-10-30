@@ -17,11 +17,11 @@ export const Route = createFileRoute("/terms")({
         property: "og:description",
         content: "Terms governing use of the IQLink Technologies corporate website.",
       },
-      { property: "og:url", content: "https://iqlink.in/terms" },
+      { property: "og:url", content: "https://www.iqlink.in/terms" },
       { property: "og:type", content: "website" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/terms" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/terms" }],
   }),
   component: Terms,
 });

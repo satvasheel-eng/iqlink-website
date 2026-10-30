@@ -20,7 +20,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Fragmented information creates poor decisions. IQLink builds connected intelligence systems that bring information, context and next actions together.",
       },
-      { property: "og:url", content: "https://iqlink.in/about" },
+      { property: "og:url", content: "https://www.iqlink.in/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "About IQLink Technologies" },
       {
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/about")({
           "Fragmented information creates poor decisions. IQLink builds connected intelligence systems.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/about" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/about" }],
   }),
   component: About,
 });

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/solutions")({
         content:
           "Connected intelligence systems for business, finance, government, education and infrastructure.",
       },
-      { property: "og:url", content: "https://iqlink.in/solutions" },
+      { property: "og:url", content: "https://www.iqlink.in/solutions" },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "Solutions — Intelligence systems | IQLink" },
       {
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solutions")({
           "Connected intelligence systems for business, finance, government, education and infrastructure.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/solutions" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/solutions" }],
   }),
   component: Solutions,
 });

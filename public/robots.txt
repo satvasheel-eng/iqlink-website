@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iqlink.in/sitemap.xml
+Sitemap: https://www.iqlink.in/sitemap.xml

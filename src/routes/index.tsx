@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
         content:
           "AI-powered decision and growth intelligence for founders, businesses, finance and institutions.",
       },
-      { property: "og:url", content: "https://iqlink.in/" },
+      { property: "og:url", content: "https://www.iqlink.in/" },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "IQLink Technologies — Connected intelligence" },
       {
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
           "AI-powered decision and growth intelligence for founders, businesses, finance and institutions.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/" }],
   }),
   component: Home,
 });

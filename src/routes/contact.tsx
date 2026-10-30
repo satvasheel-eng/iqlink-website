@@ -24,7 +24,7 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Enquiries, partnerships and design-partner interest.",
       },
-      { property: "og:url", content: "https://iqlink.in/contact" },
+      { property: "og:url", content: "https://www.iqlink.in/contact" },
       { property: "og:type", content: "website" },
       { name: "twitter:title", content: "Contact IQLink Technologies" },
       {
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/contact")({
         content: "Enquiries, partnerships and design-partner interest.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://iqlink.in/contact" }],
+    links: [{ rel: "canonical", href: "https://www.iqlink.in/contact" }],
   }),
   component: Contact,
 });
